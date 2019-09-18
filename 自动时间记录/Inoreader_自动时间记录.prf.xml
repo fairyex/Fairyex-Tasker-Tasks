@@ -1,0 +1,148 @@
+<TaskerData sr="" dvi="1" tv="5.8.3">
+	<Profile sr="prof93" ve="2">
+		<cdate>1568790583430</cdate>
+		<edate>1568790297799</edate>
+		<id>93</id>
+		<mid0>91</mid0>
+		<mid1>92</mid1>
+		<nme>Inoreader 自动时间记录</nme>
+		<Share sr="Share">
+			<d>以 Inoreader 为例的自动时间记录
+少数派 @Fairye</d>
+			<t></t>
+		</Share>
+		<App sr="con0" ve="2">
+			<cls0>com.innologica.inoreader.activities.BootstrapActivity</cls0>
+			<flags>2</flags>
+			<label0>Inoreader</label0>
+			<pkg0>com.innologica.inoreader</pkg0>
+		</App>
+	</Profile>
+	<Task sr="task91">
+		<cdate>1568640053672</cdate>
+		<edate>1568790604146</edate>
+		<id>91</id>
+		<nme>Toggl 计时</nme>
+		<Action sr="act0" ve="7">
+			<code>548</code>
+			<Str sr="arg0" ve="3">Toggl 计时开始</Str>
+			<Int sr="arg1" val="1"/>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>547</code>
+			<label>认证密钥</label>
+			<Str sr="arg0" ve="3">%AUTHCODE</Str>
+			<Str sr="arg1" ve="3">请将这里替换为你自己的 API Key</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+		</Action>
+		<Action sr="act2" ve="7">
+			<code>547</code>
+			<label>任务名称</label>
+			<Str sr="arg0" ve="3">%TASKNAME</Str>
+			<Str sr="arg1" ve="3">Inoreader 开始阅读</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+		</Action>
+		<Action sr="act3" ve="7">
+			<code>339</code>
+			<label>发送开始请求</label>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES>&lt;StringArray sr=""&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;%http_data
+数据
+Data that the server responded from the HTTP request.&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;%http_response_code
+Response Code
+The HTTP Code the server responded&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&gt;%http_headers()
+Response Headers
+The HTTP Headers the server sent in the response. Each header is in the 'key:value' format&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES3&gt;%http_response_length
+Response Length
+The size of the response in bytes&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES3&gt;&lt;/StringArray&gt;</net.dinglisch.android.tasker.RELEVANT_VARIABLES>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>[Ljava.lang.String;</net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>
+				</Vals>
+			</Bundle>
+			<Int sr="arg1" val="1"/>
+			<Str sr="arg2" ve="3">https://www.toggl.com/api/v8/time_entries/start</Str>
+			<Str sr="arg3" ve="3">Authorization:%AUTHCODE
+Content-Type:application/json</Str>
+			<Str sr="arg4" ve="3"/>
+			<Str sr="arg5" ve="3">{"time_entry":{"description":"%TASKNAME","pid":"","created_with":"Tasker"}}</Str>
+			<Str sr="arg6" ve="3"/>
+			<Str sr="arg7" ve="3"/>
+			<Int sr="arg8" val="5"/>
+			<Int sr="arg9" val="1"/>
+		</Action>
+		<Action sr="act4" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%TASKDATA</Str>
+			<Str sr="arg1" ve="3">%http_data</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+		</Action>
+		<Action sr="act5" ve="7">
+			<code>129</code>
+			<label>获取任务 ID</label>
+			<Str sr="arg0" ve="3">var i = JSON.parse(global("TASKDATA"));
+setGlobal("TASKID",i.data.id);
+exit();</Str>
+			<Str sr="arg1" ve="3"/>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="1"/>
+		</Action>
+	</Task>
+	<Task sr="task92">
+		<cdate>1568647103295</cdate>
+		<edate>1568790279655</edate>
+		<id>92</id>
+		<nme>Toggl 停止计时</nme>
+		<pri>1006</pri>
+		<Action sr="act0" ve="7">
+			<code>548</code>
+			<Str sr="arg0" ve="3">Toggl 计时停止</Str>
+			<Int sr="arg1" val="1"/>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>547</code>
+			<label>认证密钥</label>
+			<Str sr="arg0" ve="3">%AUTHCODE</Str>
+			<Str sr="arg1" ve="3">请将这里替换为你自己的 API Key</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+		</Action>
+		<Action sr="act2" ve="7">
+			<code>339</code>
+			<label>发送停止计时请求</label>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES>&lt;StringArray sr=""&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;%http_data
+数据
+Data that the server responded from the HTTP request.&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;%http_response_code
+Response Code
+The HTTP Code the server responded&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&gt;%http_headers()
+Response Headers
+The HTTP Headers the server sent in the response. Each header is in the 'key:value' format&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES3&gt;%http_response_length
+Response Length
+The size of the response in bytes&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES3&gt;&lt;/StringArray&gt;</net.dinglisch.android.tasker.RELEVANT_VARIABLES>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>[Ljava.lang.String;</net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>
+				</Vals>
+			</Bundle>
+			<Int sr="arg1" val="0"/>
+			<Str sr="arg2" ve="3">https://www.toggl.com/api/v8/time_entries/%TASKID/stop</Str>
+			<Str sr="arg3" ve="3">Authorization:%AUTHCODE</Str>
+			<Str sr="arg4" ve="3"/>
+			<Str sr="arg5" ve="3"/>
+			<Str sr="arg6" ve="3"/>
+			<Str sr="arg7" ve="3"/>
+			<Int sr="arg8" val="5"/>
+			<Int sr="arg9" val="1"/>
+		</Action>
+	</Task>
+</TaskerData>
