@@ -1,0 +1,770 @@
+<TaskerData sr="" dvi="1" tv="5.9.beta.3">
+	<dmetric>1440.0,2901.0</dmetric>
+	<Profile sr="prof126" ve="2">
+		<cdate>1571118447074</cdate>
+		<edate>1571118499683</edate>
+		<flags>8</flags>
+		<id>126</id>
+		<mid0>127</mid0>
+		<Event sr="con0" ve="2">
+			<code>2076</code>
+			<pri>0</pri>
+			<Str sr="arg0" ve="3"/>
+			<Str sr="arg1" ve="3"/>
+		</Event>
+	</Profile>
+	<Project sr="proj0" ve="2">
+		<cdate>1571056036225</cdate>
+		<name>物品管理</name>
+		<pids>126</pids>
+		<psort>AgeOldestFirst</psort>
+		<scenes>物品管理,数据中心</scenes>
+		<tids>116,119,124,127,125,118,54,117,36,121,93,123,120,122</tids>
+		<Share sr="Share">
+			<d>Tasker 实现物品管理
+
+By Fairyex</d>
+			<t></t>
+		</Share>
+	</Project>
+	<Scene sr="scene数据中心">
+		<cdate>1497193702668</cdate>
+		<edate>1571066624005</edate>
+		<heightLand>-1</heightLand>
+		<heightPort>2900</heightPort>
+		<nme>数据中心</nme>
+		<widthLand>-1</widthLand>
+		<widthPort>1410</widthPort>
+		<RectElement sr="elements0">
+			<clickTask>54</clickTask>
+			<flags>4</flags>
+			<geom>0,0,1410,2900,0,0,1080,1920</geom>
+			<Str sr="arg0" ve="3">背景点击</Str>
+			<Int sr="arg1" val="0"/>
+			<Str sr="arg2" ve="3">#00333333</Str>
+			<Str sr="arg3" ve="3"/>
+			<Int sr="arg4" val="0"/>
+			<Str sr="arg5" ve="3">#FF000000</Str>
+			<Int sr="arg6" val="0"/>
+			<Int sr="arg7" val="0"/>
+		</RectElement>
+		<RectElement sr="elements1">
+			<flags>4</flags>
+			<geom>11,1028,1382,1371,27,1235,1032,500</geom>
+			<Str sr="arg0" ve="3">背景</Str>
+			<Int sr="arg1" val="0"/>
+			<Str sr="arg2" ve="3">#00eaeaea</Str>
+			<Str sr="arg3" ve="3"/>
+			<Int sr="arg4" val="0"/>
+			<Str sr="arg5" ve="3">#FF000000</Str>
+			<Int sr="arg6" val="30"/>
+			<Int sr="arg7" val="0"/>
+		</RectElement>
+		<WebElement sr="elements2" ve="2">
+			<flags>4</flags>
+			<geom>11,1028,1382,1371,352,660,200,200</geom>
+			<Str sr="arg0" ve="3">Web视图1</Str>
+			<Int sr="arg1" val="1"/>
+			<Str sr="arg2" ve="3">Tasker/configs/user/data-center.html</Str>
+			<Int sr="arg3" val="1"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="0"/>
+			<Int sr="arg6" val="1"/>
+			<Int sr="arg7" val="1"/>
+			<RectElement sr="background">
+				<flags>4</flags>
+				<geom>-1,-1,-1,-1,-1,-1,-1,-1</geom>
+				<Str sr="arg0" ve="3"/>
+				<Int sr="arg1" val="0"/>
+				<Str sr="arg2" ve="3">#00FFFFFF</Str>
+				<Str sr="arg3" ve="3"/>
+				<Int sr="arg4" val="0"/>
+				<Str sr="arg5" ve="3">#FF000000</Str>
+				<Int sr="arg6" val="30"/>
+				<Int sr="arg7" val="0"/>
+			</RectElement>
+		</WebElement>
+		<PropertiesElement sr="props">
+			<keyTask>36</keyTask>
+			<Int sr="arg0" val="1"/>
+			<Int sr="arg1" val="0"/>
+			<Str sr="arg2" ve="3">#00FFFFFF</Str>
+			<Int sr="arg3" val="0"/>
+			<Str sr="arg4" ve="3">日报</Str>
+			<Str sr="arg5" ve="3"/>
+			<Img sr="arg6" ve="2"/>
+			<Str sr="arg7" ve="3"/>
+			<LinkClickFilter sr="filter0">
+				<urlMatch>4</urlMatch>
+			</LinkClickFilter>
+		</PropertiesElement>
+	</Scene>
+	<Scene sr="scene物品管理">
+		<cdate>1497193702668</cdate>
+		<edate>1571118354468</edate>
+		<heightLand>-1</heightLand>
+		<heightPort>2900</heightPort>
+		<nme>物品管理</nme>
+		<widthLand>-1</widthLand>
+		<widthPort>1410</widthPort>
+		<RectElement sr="elements0">
+			<clickTask>119</clickTask>
+			<flags>4</flags>
+			<geom>0,0,1410,2900,0,0,1080,1920</geom>
+			<Str sr="arg0" ve="3">背景点击</Str>
+			<Int sr="arg1" val="0"/>
+			<Str sr="arg2" ve="3">#00333333</Str>
+			<Str sr="arg3" ve="3"/>
+			<Int sr="arg4" val="0"/>
+			<Str sr="arg5" ve="3">#FF000000</Str>
+			<Int sr="arg6" val="0"/>
+			<Int sr="arg7" val="0"/>
+		</RectElement>
+		<RectElement sr="elements1">
+			<flags>4</flags>
+			<geom>220,1025,1000,1000,5,1025,1400,1375</geom>
+			<Str sr="arg0" ve="3">矩形3</Str>
+			<Int sr="arg1" val="0"/>
+			<Str sr="arg2" ve="3">#FFFFFFFF</Str>
+			<Str sr="arg3" ve="3"/>
+			<Int sr="arg4" val="0"/>
+			<Str sr="arg5" ve="3">#FF000000</Str>
+			<Int sr="arg6" val="20"/>
+			<Int sr="arg7" val="0"/>
+		</RectElement>
+		<ButtonElement sr="elements2" ve="3">
+			<clickTask>122</clickTask>
+			<flags>4</flags>
+			<geom>280,1325,400,275,455,1350,475,275</geom>
+			<Str sr="arg0" ve="3">新抽屉</Str>
+			<Str sr="arg1" ve="3">添加抽屉</Str>
+			<Int sr="arg2" val="16"/>
+			<Int sr="arg3" val="100"/>
+			<Str sr="arg4" ve="3">#FF000000</Str>
+			<Str sr="arg5" ve="3"/>
+			<Int sr="arg6" val="0"/>
+			<Img sr="arg7" ve="2"/>
+		</ButtonElement>
+		<RectElement sr="elements3">
+			<flags>4</flags>
+			<geom>220,1025,1000,250,220,1025,1000,250</geom>
+			<Str sr="arg0" ve="3">矩形4</Str>
+			<Int sr="arg1" val="0"/>
+			<Str sr="arg2" ve="3">#FFFF3C3C</Str>
+			<Str sr="arg3" ve="3"/>
+			<Int sr="arg4" val="0"/>
+			<Str sr="arg5" ve="3">#FF000000</Str>
+			<Int sr="arg6" val="20"/>
+			<Int sr="arg7" val="1"/>
+		</RectElement>
+		<TextElement sr="elements4" ve="3">
+			<flags>4</flags>
+			<geom>205,1025,475,250,205,1025,475,250</geom>
+			<Str sr="arg0" ve="3">物品管理</Str>
+			<Str sr="arg1" ve="3">&lt;b&gt;物品管理&lt;/b&gt;</Str>
+			<Int sr="arg2" val="20"/>
+			<Int sr="arg3" val="100"/>
+			<Str sr="arg4" ve="3">#FFFFFFFF</Str>
+			<Str sr="arg5" ve="3"/>
+			<Int sr="arg6" val="0"/>
+			<Int sr="arg7" val="0"/>
+			<Int sr="arg8" val="2"/>
+		</TextElement>
+		<ButtonElement sr="elements5" ve="3">
+			<clickTask>123</clickTask>
+			<flags>4</flags>
+			<geom>730,1325,400,275,470,1700,500,275</geom>
+			<Str sr="arg0" ve="3">查找物品</Str>
+			<Str sr="arg1" ve="3">查找物品</Str>
+			<Int sr="arg2" val="16"/>
+			<Int sr="arg3" val="100"/>
+			<Str sr="arg4" ve="3">#FF000000</Str>
+			<Str sr="arg5" ve="3"/>
+			<Int sr="arg6" val="0"/>
+			<Img sr="arg7" ve="2"/>
+		</ButtonElement>
+		<ButtonElement sr="elements6" ve="3">
+			<clickTask>125</clickTask>
+			<flags>4</flags>
+			<geom>280,1650,400,275,280,1650,400,275</geom>
+			<Str sr="arg0" ve="3">查看抽屉</Str>
+			<Str sr="arg1" ve="3">查看抽屉</Str>
+			<Int sr="arg2" val="16"/>
+			<Int sr="arg3" val="100"/>
+			<Str sr="arg4" ve="3">#FF000000</Str>
+			<Str sr="arg5" ve="3"/>
+			<Int sr="arg6" val="0"/>
+			<Img sr="arg7" ve="2"/>
+		</ButtonElement>
+		<PropertiesElement sr="props">
+			<keyTask>120</keyTask>
+			<Int sr="arg0" val="1"/>
+			<Int sr="arg1" val="0"/>
+			<Str sr="arg2" ve="3">#00FFFFFF</Str>
+			<Int sr="arg3" val="0"/>
+			<Str sr="arg4" ve="3">日报</Str>
+			<Str sr="arg5" ve="3"/>
+			<Img sr="arg6" ve="2"/>
+			<Str sr="arg7" ve="3"/>
+			<LinkClickFilter sr="filter0">
+				<urlMatch>4</urlMatch>
+			</LinkClickFilter>
+		</PropertiesElement>
+	</Scene>
+	<Task sr="task116">
+		<cdate>1571060579400</cdate>
+		<edate>1571071364468</edate>
+		<id>116</id>
+		<nme>添加新抽屉</nme>
+		<pri>100</pri>
+		<Action sr="act0" ve="7">
+			<code>548</code>
+			<Str sr="arg0" ve="3">请将手机放到 NFC 标签上再按确定</Str>
+			<Int sr="arg1" val="1"/>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>360</code>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES>&lt;StringArray sr=""&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;%input
+Input
+The text that was inserted in the dialog&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;&lt;/StringArray&gt;</net.dinglisch.android.tasker.RELEVANT_VARIABLES>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>[Ljava.lang.String;</net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>
+				</Vals>
+			</Bundle>
+			<Str sr="arg1" ve="3">添加新抽屉</Str>
+			<Str sr="arg2" ve="3">输入新抽屉的名字</Str>
+			<Str sr="arg3" ve="3"/>
+			<Int sr="arg4" val="30"/>
+			<Str sr="arg5" ve="3">1</Str>
+			<Int sr="arg6" val="0"/>
+			<Int sr="arg7" val="0"/>
+		</Action>
+		<Action sr="act10" ve="7">
+			<code>43</code>
+		</Action>
+		<Action sr="act11" ve="7">
+			<code>548</code>
+			<Str sr="arg0" ve="3">抽屉已存在</Str>
+			<Int sr="arg1" val="1"/>
+		</Action>
+		<Action sr="act12" ve="7">
+			<code>38</code>
+		</Action>
+		<Action sr="act2" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%NEW_DRAWER</Str>
+			<Str sr="arg1" ve="3">%input</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+		</Action>
+		<Action sr="act3" ve="7">
+			<code>330</code>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES>&lt;StringArray sr=""&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;%nfc_id
+ID
+Unique ID for the tag&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;%nfc_payload
+Payload
+Contents of the tag in text format&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&gt;%nfc_present
+Present
+Contents of the tag in text format&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES3&gt;%nfc_types()
+Types
+Type of technologies the card supports&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES3&gt;&lt;/StringArray&gt;</net.dinglisch.android.tasker.RELEVANT_VARIABLES>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>[Ljava.lang.String;</net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>
+				</Vals>
+			</Bundle>
+			<Str sr="arg1" ve="3">物品管理 %input</Str>
+			<Str sr="arg2" ve="3">Text</Str>
+		</Action>
+		<Action sr="act4" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%DRAWER_ID</Str>
+			<Str sr="arg1" ve="3">%nfc_id</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+		</Action>
+		<Action sr="act5" ve="7">
+			<code>129</code>
+			<on>false</on>
+			<Str sr="arg0" ve="3">var drawer = global("DRAWER_ID");
+setGlobal(drawer,"["+global("NEW_DRAWER")+",'']");</Str>
+			<Str sr="arg1" ve="3"/>
+			<Int sr="arg2" val="1"/>
+			<Int sr="arg3" val="45"/>
+		</Action>
+		<Action sr="act6" ve="7">
+			<code>342</code>
+			<Int sr="arg0" val="5"/>
+			<Str sr="arg1" ve="3">Tasker/configs/user/GM/%DRAWER_ID.text</Str>
+			<Str sr="arg2" ve="3">%DRAWER_EXIST</Str>
+			<Int sr="arg3" val="0"/>
+		</Action>
+		<Action sr="act7" ve="7">
+			<code>37</code>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%DRAWER_EXIST</lhs>
+					<op>1</op>
+					<rhs>true</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act8" ve="7">
+			<code>410</code>
+			<Str sr="arg0" ve="3">Tasker/configs/user/GM/%DRAWER_ID.text</Str>
+			<Str sr="arg1" ve="3">%NEW_DRAWER@fairyex_drawer@空白抽屉</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+		</Action>
+		<Action sr="act9" ve="7">
+			<code>548</code>
+			<Str sr="arg0" ve="3">成功建立新抽屉 %NEW_DRAWER</Str>
+			<Int sr="arg1" val="1"/>
+		</Action>
+	</Task>
+	<Task sr="task117">
+		<cdate>1571061344270</cdate>
+		<edate>1571064788718</edate>
+		<id>117</id>
+		<nme>物品管理测试</nme>
+		<pri>100</pri>
+		<Action sr="act0" ve="7">
+			<code>417</code>
+			<Str sr="arg0" ve="3">Tasker/configs/user/GM/04B1DDC2C64880.text</Str>
+			<Str sr="arg1" ve="3">%DRAWER_CONTENT</Str>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>590</code>
+			<Str sr="arg0" ve="3">%DRAWER_CONTENT</Str>
+			<Str sr="arg1" ve="3">@fairyex_drawer@</Str>
+			<Int sr="arg2" val="1"/>
+		</Action>
+		<Action sr="act2" ve="7">
+			<code>129</code>
+			<on>false</on>
+			<Str sr="arg0" ve="3">var content = JSON.parse(global("NFC_GM"));
+alert(content)
+content[global("DRAWER_ID")] = "{'name':"+global("input")+",'content':''}";
+setGlobal("NFC_GM",content);</Str>
+			<Str sr="arg1" ve="3"/>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="5"/>
+		</Action>
+	</Task>
+	<Task sr="task118">
+		<cdate>1571065060331</cdate>
+		<edate>1571116772123</edate>
+		<id>118</id>
+		<nme>查找物品</nme>
+		<pri>100</pri>
+		<Action sr="act0" ve="7">
+			<code>360</code>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES>&lt;StringArray sr=""&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;%input
+Input
+The text that was inserted in the dialog&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;&lt;/StringArray&gt;</net.dinglisch.android.tasker.RELEVANT_VARIABLES>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>[Ljava.lang.String;</net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>
+				</Vals>
+			</Bundle>
+			<Str sr="arg1" ve="3">输入想要查找的物品</Str>
+			<Str sr="arg2" ve="3"/>
+			<Str sr="arg3" ve="3"/>
+			<Int sr="arg4" val="120"/>
+			<Str sr="arg5" ve="3">1</Str>
+			<Int sr="arg6" val="0"/>
+			<Int sr="arg7" val="0"/>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%DRAWER_SEARCH</Str>
+			<Str sr="arg1" ve="3">%input</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+		</Action>
+		<Action sr="act2" ve="7">
+			<code>129</code>
+			<Str sr="arg0" ve="3">var drawer_list = listFiles("Tasker/configs/user/GM/").split("\n");
+var result = [];
+for(i=0;i&lt;drawer_list.length;i++){
+  var content = readFile(drawer_list[i]);
+  if(content.indexOf(global("DRAWER_SEARCH")) != -1){
+  result.push(content.split("@fairyex_drawer@")[0]);
+  }
+}
+
+if(result.length&gt;0){setGlobal("DRAWER_RESULT",result+" 中发现该物品")}
+else{setGlobal("DRAWER_RESULT","没有找到任何结果")}</Str>
+			<Str sr="arg1" ve="3"/>
+			<Int sr="arg2" val="1"/>
+			<Int sr="arg3" val="5"/>
+		</Action>
+		<Action sr="act3" ve="7">
+			<code>360</code>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES>&lt;StringArray sr=""&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;%input
+Input
+The text that was inserted in the dialog&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;&lt;/StringArray&gt;</net.dinglisch.android.tasker.RELEVANT_VARIABLES>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>[Ljava.lang.String;</net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>
+				</Vals>
+			</Bundle>
+			<Str sr="arg1" ve="3">搜索结果</Str>
+			<Str sr="arg2" ve="3"/>
+			<Str sr="arg3" ve="3">%DRAWER_RESULT</Str>
+			<Int sr="arg4" val="120"/>
+			<Str sr="arg5" ve="3">131073</Str>
+			<Int sr="arg6" val="0"/>
+			<Int sr="arg7" val="0"/>
+		</Action>
+	</Task>
+	<Task sr="task119">
+		<cdate>1497194598232</cdate>
+		<edate>1497194598232</edate>
+		<id>119</id>
+		<pri>9</pri>
+		<Action sr="act0" ve="7">
+			<code>49</code>
+			<Str sr="arg0" ve="3">物品管理</Str>
+		</Action>
+	</Task>
+	<Task sr="task120">
+		<cdate>1551836707397</cdate>
+		<edate>1551836707397</edate>
+		<id>120</id>
+		<pri>102</pri>
+		<Action sr="act0" ve="7">
+			<code>49</code>
+			<Str sr="arg0" ve="3">数据中心</Str>
+		</Action>
+	</Task>
+	<Task sr="task121">
+		<cdate>1571066746677</cdate>
+		<edate>1571116768482</edate>
+		<id>121</id>
+		<nme>显示控制界面</nme>
+		<pri>7</pri>
+		<Action sr="act0" ve="7">
+			<code>47</code>
+			<Str sr="arg0" ve="3">物品管理</Str>
+			<Int sr="arg1" val="5"/>
+			<Int sr="arg2" val="100"/>
+			<Int sr="arg3" val="100"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="0"/>
+			<Int sr="arg6" val="0"/>
+			<Int sr="arg7" val="1"/>
+		</Action>
+		<Img sr="icn" ve="2">
+			<nme>mw_action_find_replace</nme>
+		</Img>
+	</Task>
+	<Task sr="task122">
+		<cdate>1571067170328</cdate>
+		<edate>1571067170328</edate>
+		<id>122</id>
+		<pri>9</pri>
+		<Action sr="act0" ve="7">
+			<code>130</code>
+			<Str sr="arg0" ve="3">添加新抽屉</Str>
+			<Int sr="arg1">
+				<var>%priority</var>
+			</Int>
+			<Str sr="arg2" ve="3"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Int sr="arg5" val="0"/>
+		</Action>
+	</Task>
+	<Task sr="task123">
+		<cdate>1571067182497</cdate>
+		<edate>1571067182497</edate>
+		<id>123</id>
+		<pri>9</pri>
+		<Action sr="act0" ve="7">
+			<code>130</code>
+			<Str sr="arg0" ve="3">查找物品</Str>
+			<Int sr="arg1">
+				<var>%priority</var>
+			</Int>
+			<Str sr="arg2" ve="3"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Int sr="arg5" val="0"/>
+		</Action>
+	</Task>
+	<Task sr="task124">
+		<cdate>1571116742685</cdate>
+		<edate>1571118336515</edate>
+		<id>124</id>
+		<nme>查看抽屉物品</nme>
+		<pri>100</pri>
+		<Action sr="act0" ve="7">
+			<code>360</code>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES>&lt;StringArray sr=""&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;%input
+Input
+The text that was inserted in the dialog&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;&lt;/StringArray&gt;</net.dinglisch.android.tasker.RELEVANT_VARIABLES>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>[Ljava.lang.String;</net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>
+				</Vals>
+			</Bundle>
+			<Str sr="arg1" ve="3">输入部分/完整抽屉名字</Str>
+			<Str sr="arg2" ve="3"/>
+			<Str sr="arg3" ve="3"/>
+			<Int sr="arg4" val="120"/>
+			<Str sr="arg5" ve="3">1</Str>
+			<Int sr="arg6" val="0"/>
+			<Int sr="arg7" val="0"/>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%DRAWER_SEARCH</Str>
+			<Str sr="arg1" ve="3">%input</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+		</Action>
+		<Action sr="act2" ve="7">
+			<code>129</code>
+			<Str sr="arg0" ve="3">var drawer_list = listFiles("Tasker/configs/user/GM/").split("\n");
+var result = [];
+for(i=0;i&lt;drawer_list.length;i++){
+  var content = readFile(drawer_list[i]).split("@fairyex_drawer@");
+  if(content[0].indexOf(global("DRAWER_SEARCH")) != -1){
+  setGlobal("DRAWER_NAME",content[0]);
+  result = content[1];
+  }
+}
+
+if(result.length&gt;0){
+setGlobal("DRAWER_RESULT",result);
+}
+else{setGlobal("DRAWER_RESULT","没有找到任何结果")}</Str>
+			<Str sr="arg1" ve="3"/>
+			<Int sr="arg2" val="1"/>
+			<Int sr="arg3" val="5"/>
+		</Action>
+		<Action sr="act3" ve="7">
+			<code>360</code>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES>&lt;StringArray sr=""&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;%input
+Input
+The text that was inserted in the dialog&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;&lt;/StringArray&gt;</net.dinglisch.android.tasker.RELEVANT_VARIABLES>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>[Ljava.lang.String;</net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>
+				</Vals>
+			</Bundle>
+			<Str sr="arg1" ve="3">%DRAWER_NAME</Str>
+			<Str sr="arg2" ve="3">抽屉里面都有：</Str>
+			<Str sr="arg3" ve="3">%DRAWER_RESULT</Str>
+			<Int sr="arg4">
+				<var>3600</var>
+			</Int>
+			<Str sr="arg5" ve="3">131073</Str>
+			<Int sr="arg6" val="0"/>
+			<Int sr="arg7" val="0"/>
+		</Action>
+	</Task>
+	<Task sr="task125">
+		<cdate>1571117162377</cdate>
+		<edate>1571117162377</edate>
+		<id>125</id>
+		<pri>9</pri>
+		<Action sr="act0" ve="7">
+			<code>130</code>
+			<Str sr="arg0" ve="3">查看抽屉物品</Str>
+			<Int sr="arg1">
+				<var>%priority</var>
+			</Int>
+			<Str sr="arg2" ve="3"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Int sr="arg5" val="0"/>
+		</Action>
+	</Task>
+	<Task sr="task127">
+		<cdate>1571118465975</cdate>
+		<edate>1571118499683</edate>
+		<id>127</id>
+		<nme>物品管理扫描</nme>
+		<pri>6</pri>
+		<Action sr="act0" ve="7">
+			<code>330</code>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES>&lt;StringArray sr=""&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;%nfc_id
+ID
+Unique ID for the tag&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;%nfc_payload
+Payload
+Contents of the tag in text format&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&gt;%nfc_present
+Present
+Contents of the tag in text format&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES3&gt;%nfc_types()
+Types
+Type of technologies the card supports&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES3&gt;&lt;/StringArray&gt;</net.dinglisch.android.tasker.RELEVANT_VARIABLES>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>[Ljava.lang.String;</net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>
+				</Vals>
+			</Bundle>
+			<Str sr="arg1" ve="3"/>
+			<Str sr="arg2" ve="3"/>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>37</code>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%nfc_payload</lhs>
+					<op>4</op>
+					<rhs>物品管理</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act2" ve="7">
+			<code>130</code>
+			<Str sr="arg0" ve="3">显示抽屉内容</Str>
+			<Int sr="arg1">
+				<var>%priority</var>
+			</Int>
+			<Str sr="arg2" ve="3"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Int sr="arg5" val="0"/>
+		</Action>
+		<Action sr="act3" ve="7">
+			<code>38</code>
+		</Action>
+	</Task>
+	<Task sr="task36">
+		<cdate>1551836707397</cdate>
+		<edate>1551836707397</edate>
+		<id>36</id>
+		<pri>9</pri>
+		<Action sr="act0" ve="7">
+			<code>49</code>
+			<Str sr="arg0" ve="3">数据中心</Str>
+		</Action>
+	</Task>
+	<Task sr="task54">
+		<cdate>1497194598232</cdate>
+		<edate>1497194598232</edate>
+		<id>54</id>
+		<pri>9</pri>
+		<Action sr="act0" ve="7">
+			<code>49</code>
+			<Str sr="arg0" ve="3">数据中心</Str>
+		</Action>
+	</Task>
+	<Task sr="task93">
+		<cdate>1571056063343</cdate>
+		<edate>1571117591201</edate>
+		<id>93</id>
+		<nme>显示抽屉内容</nme>
+		<pri>100</pri>
+		<Action sr="act0" ve="7">
+			<code>330</code>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES>&lt;StringArray sr=""&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;%nfc_id
+ID
+Unique ID for the tag&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;%nfc_payload
+Payload
+Contents of the tag in text format&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&gt;%nfc_present
+Present
+Contents of the tag in text format&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES3&gt;%nfc_types()
+Types
+Type of technologies the card supports&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES3&gt;&lt;/StringArray&gt;</net.dinglisch.android.tasker.RELEVANT_VARIABLES>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>[Ljava.lang.String;</net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>
+				</Vals>
+			</Bundle>
+			<Str sr="arg1" ve="3"/>
+			<Str sr="arg2" ve="3"/>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%DRAWER_ID</Str>
+			<Str sr="arg1" ve="3">%nfc_id</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+		</Action>
+		<Action sr="act10" ve="7">
+			<code>548</code>
+			<Str sr="arg0" ve="3">这个标签还没有添加抽屉内容</Str>
+			<Int sr="arg1" val="1"/>
+		</Action>
+		<Action sr="act11" ve="7">
+			<code>38</code>
+		</Action>
+		<Action sr="act2" ve="7">
+			<code>342</code>
+			<Int sr="arg0" val="5"/>
+			<Str sr="arg1" ve="3">Tasker/configs/user/GM/%DRAWER_ID.text</Str>
+			<Str sr="arg2" ve="3">%DRAWER_READ_EXIST</Str>
+			<Int sr="arg3" val="0"/>
+		</Action>
+		<Action sr="act3" ve="7">
+			<code>37</code>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%DRAWER_READ_EXIST</lhs>
+					<op>0</op>
+					<rhs>true</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act4" ve="7">
+			<code>417</code>
+			<Str sr="arg0" ve="3">Tasker/configs/user/GM/%DRAWER_ID.text</Str>
+			<Str sr="arg1" ve="3">%DRAWER_CONTENT</Str>
+		</Action>
+		<Action sr="act5" ve="7">
+			<code>590</code>
+			<Str sr="arg0" ve="3">%DRAWER_CONTENT</Str>
+			<Str sr="arg1" ve="3">@fairyex_drawer@</Str>
+			<Int sr="arg2" val="1"/>
+		</Action>
+		<Action sr="act6" ve="7">
+			<code>360</code>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES>&lt;StringArray sr=""&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;%input
+Input
+The text that was inserted in the dialog&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;&lt;/StringArray&gt;</net.dinglisch.android.tasker.RELEVANT_VARIABLES>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>[Ljava.lang.String;</net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>
+				</Vals>
+			</Bundle>
+			<Str sr="arg1" ve="3">%DRAWER_CONTENT1</Str>
+			<Str sr="arg2" ve="3">抽屉里面都有：</Str>
+			<Str sr="arg3" ve="3">%DRAWER_CONTENT2</Str>
+			<Int sr="arg4">
+				<var>3600</var>
+			</Int>
+			<Str sr="arg5" ve="3">131073</Str>
+			<Int sr="arg6" val="0"/>
+			<Int sr="arg7" val="0"/>
+		</Action>
+		<Action sr="act7" ve="7">
+			<code>410</code>
+			<Str sr="arg0" ve="3">Tasker/configs/user/GM/%DRAWER_ID.text</Str>
+			<Str sr="arg1" ve="3">%DRAWER_CONTENT1@fairyex_drawer@%input</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+		</Action>
+		<Action sr="act8" ve="7">
+			<code>548</code>
+			<Str sr="arg0" ve="3">成功修改抽屉内容</Str>
+			<Int sr="arg1" val="0"/>
+		</Action>
+		<Action sr="act9" ve="7">
+			<code>43</code>
+		</Action>
+	</Task>
+</TaskerData>
