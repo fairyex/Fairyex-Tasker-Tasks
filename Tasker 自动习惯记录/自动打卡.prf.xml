@@ -1,0 +1,136 @@
+<TaskerData sr="" dvi="1" tv="5.9.beta.6">
+	<Profile sr="prof129" ve="2">
+		<cdate>1572497722915</cdate>
+		<clp>true</clp>
+		<edate>1572436167353</edate>
+		<id>129</id>
+		<mid0>97</mid0>
+		<mid1>128</mid1>
+		<nme>自动打卡</nme>
+		<Share sr="Share">
+			<d>自动习惯记录 By Fairyex
+
+少数派 @Fairyex
+酷安 @Fairyex
+微博 @Fairyex</d>
+			<p>false</p>
+			<t></t>
+		</Share>
+		<App sr="con0" ve="2">
+			<cls0>com.sec.android.app.camera.Camera</cls0>
+			<flags>3</flags>
+			<label0>相机</label0>
+			<pkg0>com.sec.android.app.camera</pkg0>
+		</App>
+	</Profile>
+	<Task sr="task128">
+		<cdate>1570453952852</cdate>
+		<edate>1572440725807</edate>
+		<id>128</id>
+		<nme>开始自动打卡</nme>
+		<pri>100</pri>
+		<Action sr="act0" ve="7">
+			<code>547</code>
+			<label>这里设定应用打开多久之后可以打卡</label>
+			<Str sr="arg0" ve="3">%APPUSETIME</Str>
+			<Str sr="arg1" ve="3">5000</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>547</code>
+			<label>记录应用关闭的时间</label>
+			<Str sr="arg0" ve="3">%APPCLOSE</Str>
+			<Str sr="arg1" ve="3">%TIMEMS</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+		</Action>
+		<Action sr="act2" ve="7">
+			<code>597</code>
+			<label>时间数字太大，只截取后部分内容</label>
+			<Str sr="arg0" ve="3">%APPCLOSE</Str>
+			<Int sr="arg1" val="6"/>
+			<Int sr="arg2" val="100"/>
+			<Int sr="arg3" val="1"/>
+			<Str sr="arg4" ve="3"/>
+		</Action>
+		<Action sr="act3" ve="7">
+			<code>890</code>
+			<label>计算出应用使用时间</label>
+			<Str sr="arg0" ve="3">%APPCLOSE</Str>
+			<Int sr="arg1">
+				<var>%APPOPEN</var>
+			</Int>
+			<Int sr="arg2" val="0"/>
+		</Action>
+		<Action sr="act4" ve="7">
+			<code>37</code>
+			<label>判断应用打开时间是否大于设定的秒数</label>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%APPCLOSE</lhs>
+					<op>7</op>
+					<rhs>%APPUSETIME</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act5" ve="7">
+			<code>548</code>
+			<label>这里可以改为你自己喜欢的提示</label>
+			<Str sr="arg0" ve="3">应用打开时长达到，自动打卡</Str>
+			<Int sr="arg1" val="1"/>
+		</Action>
+		<Action sr="act6" ve="7">
+			<code>2112800467</code>
+			<label>调用习惯记录应用提供的接口打卡</label>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<action>0</action>
+					<action-type>java.lang.Integer</action-type>
+					<com.twofortyfouram.locale.intent.extra.BLURB>标记: 游戏</com.twofortyfouram.locale.intent.extra.BLURB>
+					<com.twofortyfouram.locale.intent.extra.BLURB-type>java.lang.String</com.twofortyfouram.locale.intent.extra.BLURB-type>
+					<habit>8</habit>
+					<habit-type>java.lang.Long</habit-type>
+					<net.dinglisch.android.tasker.subbundled>true</net.dinglisch.android.tasker.subbundled>
+					<net.dinglisch.android.tasker.subbundled-type>java.lang.Boolean</net.dinglisch.android.tasker.subbundled-type>
+				</Vals>
+			</Bundle>
+			<Str sr="arg1" ve="3">org.isoron.uhabits</Str>
+			<Str sr="arg2" ve="3">org.isoron.uhabits.automation.EditSettingActivity</Str>
+			<Int sr="arg3" val="5"/>
+		</Action>
+		<Action sr="act7" ve="7">
+			<code>38</code>
+		</Action>
+	</Task>
+	<Task sr="task97">
+		<cdate>1570455095814</cdate>
+		<edate>1572437464478</edate>
+		<id>97</id>
+		<nme>开始记录应用使用时间</nme>
+		<pri>100</pri>
+		<Action sr="act0" ve="7">
+			<code>547</code>
+			<label>记录打开应用的时间</label>
+			<Str sr="arg0" ve="3">%APPOPEN</Str>
+			<Str sr="arg1" ve="3">%TIMEMS</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>597</code>
+			<label>时间数字太大，只截取后部分内容</label>
+			<Str sr="arg0" ve="3">%APPOPEN</Str>
+			<Int sr="arg1" val="6"/>
+			<Int sr="arg2" val="100"/>
+			<Int sr="arg3" val="1"/>
+			<Str sr="arg4" ve="3"/>
+		</Action>
+	</Task>
+</TaskerData>
