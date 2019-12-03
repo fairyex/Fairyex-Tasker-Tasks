@@ -1,0 +1,40 @@
+<TaskerData sr="" dvi="1" tv="5.9.rc">
+	<Profile sr="prof3" ve="2">
+		<cdate>1575347939577</cdate>
+		<clp>true</clp>
+		<edate>1575348010243</edate>
+		<flags>8</flags>
+		<id>3</id>
+		<mid0>5</mid0>
+		<nme>指纹解锁</nme>
+		<Share sr="Share">
+			<d>指纹解锁任务 By sspai@fairyex</d>
+			<p>false</p>
+			<t></t>
+		</Share>
+		<Event sr="con0" ve="2">
+			<code>2085</code>
+			<pri>0</pri>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES>&lt;StringArray sr=""&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;%lc_text
+文字
+The text that corresponds to the matched logcat entry&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;&lt;/StringArray&gt;</net.dinglisch.android.tasker.RELEVANT_VARIABLES>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>[Ljava.lang.String;</net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>
+				</Vals>
+			</Bundle>
+			<Str sr="arg1" ve="3">FingerprintService</Str>
+			<Str sr="arg2" ve="3">onAuthenticated(owner=com.android.systemui, id=1821959201, gp=0)</Str>
+		</Event>
+	</Profile>
+	<Task sr="task5">
+		<cdate>1575347976287</cdate>
+		<edate>1575348010243</edate>
+		<id>5</id>
+		<nme>支付宝付款码</nme>
+		<Action sr="act0" ve="7">
+			<code>104</code>
+			<Str sr="arg0" ve="3">alipayqr://platformapi/startapp?saId=20000056</Str>
+		</Action>
+	</Task>
+</TaskerData>
