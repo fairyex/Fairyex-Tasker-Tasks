@@ -1,0 +1,207 @@
+<TaskerData sr="" dvi="1" tv="6.1.3-beta">
+	<Task sr="task41">
+		<cdate>1661234578068</cdate>
+		<edate>1664517246917</edate>
+		<id>41</id>
+		<nme>保存哔哩哔哩封面</nme>
+		<pri>7</pri>
+		<Share sr="Share">
+			<b>false</b>
+			<d>粘贴哔哩哔哩视频地址一键保存高清哔哩哔哩视频封面。
+
+由 Fairyex 制作，喜欢的朋友可以在各平台搜索并关注我。</d>
+			<g>Files,Media,Utility</g>
+			<p>true</p>
+			<t></t>
+		</Share>
+		<Action sr="act0" ve="7">
+			<code>360</code>
+			<label>输入视频地址</label>
+			<on>false</on>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES>&lt;StringArray sr=""&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;%input
+输入
+在对话框中被插入的文本&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;&lt;/StringArray&gt;</net.dinglisch.android.tasker.RELEVANT_VARIABLES>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>[Ljava.lang.String;</net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>
+				</Vals>
+			</Bundle>
+			<Str sr="arg1" ve="3">请粘贴哔哩哔哩视频地址</Str>
+			<Str sr="arg2" ve="3">示例：
+https://www.bilibili.com/video/BV1KZ4y197Vq
+https://b23.tv/Wlo0T9W</Str>
+			<Str sr="arg3" ve="3">https://www.bilibili.com/video/BV1KZ4y197Vq</Str>
+			<Int sr="arg4" val="15"/>
+			<Str sr="arg5" ve="3">17</Str>
+			<Int sr="arg6" val="0"/>
+			<Int sr="arg7" val="1"/>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>396</code>
+			<label>从输入中提取视频网址</label>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES>&lt;StringArray sr=""&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;%mt_match
+匹配
+也可以作为数组访问&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;%mt_match_found
+匹配
+如果匹配则为真，否则为假&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&gt;%mt_groups()
+组
+&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&gt;&lt;/StringArray&gt;</net.dinglisch.android.tasker.RELEVANT_VARIABLES>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>[Ljava.lang.String;</net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>
+				</Vals>
+			</Bundle>
+			<Int sr="arg1" val="1"/>
+			<Str sr="arg2" ve="3">%astext</Str>
+			<Str sr="arg3" ve="3">(https?|ftp|file)://[-A-Za-z0-9+&amp;@#/%?=~_|!:,.;]+[-A-Za-z0-9+&amp;@#/%=~_|]</Str>
+			<Str sr="arg4" ve="3"/>
+		</Action>
+		<Action sr="act10" ve="7">
+			<code>187</code>
+			<Str sr="arg0" ve="3">Pictures/bili/%BILI_NAME.jpg</Str>
+			<Int sr="arg1" val="85"/>
+			<Int sr="arg2" val="1"/>
+		</Action>
+		<Action sr="act2" ve="7">
+			<code>339</code>
+			<label>请求视频网页</label>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES>&lt;StringArray sr=""&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;%http_cookies
+Cookies
+服务器在响应中以 "Cookie:COOKIE_VALUE" 格式发送的Cookie, 您可以直接在 "HTTP 请求" 操作的 "标头" 字段中使用它&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;%http_response_code
+响应代码
+服务器响应的HTTP代码&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&gt;%http_response_length
+响应长度
+用bytes表示响应的大小&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES3&gt;%http_data
+数据
+服务器从HTTP request操作返回的数据&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES3&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES4&gt;%http_file_output
+文件输出
+即使您指定了文件保存的目录，也将始终包含文件的完整路径&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES4&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES5&gt;%http_headers()
+请求头
+服务器在响应中发送的 HTTP 标头，每个标头均采用 “键：值” ('key:value') 格式&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES5&gt;&lt;/StringArray&gt;</net.dinglisch.android.tasker.RELEVANT_VARIABLES>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>[Ljava.lang.String;</net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>
+				</Vals>
+			</Bundle>
+			<Int sr="arg1" val="0"/>
+			<Int sr="arg10" val="1"/>
+			<Int sr="arg11" val="1"/>
+			<Int sr="arg12" val="1"/>
+			<Str sr="arg2" ve="3">%mt_match</Str>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Str sr="arg5" ve="3"/>
+			<Str sr="arg6" ve="3"/>
+			<Str sr="arg7" ve="3"/>
+			<Int sr="arg8" val="10"/>
+			<Int sr="arg9" val="1"/>
+		</Action>
+		<Action sr="act3" ve="7">
+			<code>547</code>
+			<label>获取视频标题并设置文件名变量</label>
+			<Str sr="arg0" ve="3">%BILI_NAME</Str>
+			<Str sr="arg1" ve="3"> %http_data.title_%TIMEMS</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+			<Int sr="arg6" val="1"/>
+		</Action>
+		<Action sr="act4" ve="7">
+			<code>129</code>
+			<label>去除非法文件名字符</label>
+			<Str sr="arg0" ve="3">setGlobal("BILI_NAME",global("BILI_NAME").replace(/[\/:*?"&lt;&gt;|]/g,"_"));</Str>
+			<Str sr="arg1" ve="3"/>
+			<Int sr="arg2" val="1"/>
+			<Int sr="arg3" val="2"/>
+		</Action>
+		<Action sr="act5" ve="7">
+			<code>396</code>
+			<label>提取视频封面图片地址</label>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES>&lt;StringArray sr=""&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;%mt_match
+匹配
+也可以作为数组访问&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;%mt_match_found
+匹配
+如果匹配则为真，否则为假&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&gt;%mt_groups()
+组
+&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&gt;&lt;/StringArray&gt;</net.dinglisch.android.tasker.RELEVANT_VARIABLES>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>[Ljava.lang.String;</net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>
+				</Vals>
+			</Bundle>
+			<Int sr="arg1" val="1"/>
+			<Str sr="arg2" ve="3">%http_data</Str>
+			<Str sr="arg3" ve="3">(http://i)[\d]+(.hdslb.com/bfs/archive/)[\S]+(.jpg)</Str>
+			<Str sr="arg4" ve="3"/>
+		</Action>
+		<Action sr="act6" ve="7">
+			<code>339</code>
+			<label>将视频封面图片保存到本地</label>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES>&lt;StringArray sr=""&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;%http_cookies
+Cookies
+服务器在响应中以 "Cookie:COOKIE_VALUE" 格式发送的Cookie, 您可以直接在 "HTTP 请求" 操作的 "标头" 字段中使用它&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;%http_response_code
+响应代码
+服务器响应的HTTP代码&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&gt;%http_response_length
+响应长度
+用bytes表示响应的大小&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES3&gt;%http_file_output
+文件输出
+即使您指定了文件保存的目录，也将始终包含文件的完整路径&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES3&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES4&gt;%http_headers()
+请求头
+服务器在响应中发送的 HTTP 标头，每个标头均采用 “键：值” ('key:value') 格式&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES4&gt;&lt;/StringArray&gt;</net.dinglisch.android.tasker.RELEVANT_VARIABLES>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>[Ljava.lang.String;</net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>
+				</Vals>
+			</Bundle>
+			<Int sr="arg1" val="0"/>
+			<Int sr="arg10" val="1"/>
+			<Int sr="arg11" val="0"/>
+			<Int sr="arg12" val="1"/>
+			<Str sr="arg2" ve="3">%mt_match</Str>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Str sr="arg5" ve="3"/>
+			<Str sr="arg6" ve="3"/>
+			<Str sr="arg7" ve="3">Pictures/bili/%BILI_NAME.jpg</Str>
+			<Int sr="arg8" val="10"/>
+			<Int sr="arg9" val="1"/>
+		</Action>
+		<Action sr="act7" ve="7">
+			<code>459</code>
+			<label>刷新媒体文件目录</label>
+			<Str sr="arg0" ve="3">Pictures/bili/%BILI_NAME.jpg</Str>
+		</Action>
+		<Action sr="act8" ve="7">
+			<code>548</code>
+			<label>少数派 @Fairyex 制作，感谢使用，更多好玩有趣的任务和玩机技巧可以在各平台关注我～</label>
+			<Str sr="arg0" ve="3">%BILI_NAME.jpg 保存成功</Str>
+			<Int sr="arg1" val="0"/>
+			<Str sr="arg10" ve="3"/>
+			<Int sr="arg11" val="1"/>
+			<Int sr="arg12" val="0"/>
+			<Str sr="arg13" ve="3"/>
+			<Int sr="arg14" val="0"/>
+			<Int sr="arg2" val="0"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Str sr="arg5" ve="3"/>
+			<Str sr="arg6" ve="3"/>
+			<Str sr="arg7" ve="3"/>
+			<Str sr="arg8" ve="3"/>
+			<Int sr="arg9" val="1"/>
+		</Action>
+		<Action sr="act9" ve="7">
+			<code>188</code>
+			<Img sr="arg0" ve="2">
+				<var>Pictures/bili/%BILI_NAME.jpg</var>
+			</Img>
+			<Int sr="arg1"/>
+			<Int sr="arg2" val="0"/>
+		</Action>
+		<Img sr="icn" ve="2">
+			<nme>mw_notification_ondemand_video</nme>
+			<tint>-16777216</tint>
+		</Img>
+	</Task>
+</TaskerData>
