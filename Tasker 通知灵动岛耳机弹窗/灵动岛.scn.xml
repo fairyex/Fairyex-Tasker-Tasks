@@ -1,0 +1,173 @@
+<TaskerData sr="" dvi="1" tv="6.1.5-beta">
+	<dmetric>904.0,2229.0</dmetric>
+	<Scene sr="scene灵动岛">
+		<cdate>1671072703843</cdate>
+		<edate>1671370524637</edate>
+		<heightLand>-1</heightLand>
+		<heightPort>2176</heightPort>
+		<nme>灵动岛</nme>
+		<widthLand>-1</widthLand>
+		<widthPort>1812</widthPort>
+		<WebElement sr="elements0" ve="2">
+			<flags>4</flags>
+			<geom>0,0,1811,2176,-1,-1,-1,-1</geom>
+			<Str sr="arg0" ve="3">灵动岛</Str>
+			<Int sr="arg1" val="2"/>
+			<Str sr="arg2" ve="3">&lt;html&gt;
+  &lt;meta charset="utf-8" &gt;
+  &lt;meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"&gt;
+  &lt;meta content="yes" name="apple-mobile-web-app-capable"&gt;     
+  &lt;meta content="black" name="apple-mobile-web-app-status-bar-style"&gt;     
+  &lt;meta content="telephone=no" name="format-detection"&gt;
+&lt;style&gt;
+* {margin:0;padding:0;}
+body{width:100%;}
+a {text-decoration:none;color:#666666;
+-webkit-tap-highlight-color:rgba(0,0,0,0);}
+  
+@keyframes island {
+	from {transform:scale(0,0)}
+	to {transform:scale(1,1)}
+}
+@keyframes island_close {
+	from {transform:scale(1,1)}
+	to {transform:scale(0,0)}
+}
+
+#notification_island {width:max-content;height:max-content;text-align:center;max-width:80vw;position:absolute;top:0;left:0;padding:1.5vw 3vw;background:black;color:white;font-size:1em;opacity:0;}
+#noti_title  span {color:rgba(255,255,255,0.5)}
+#noti_title {font-size:0.7em}
+#noti_content {}
+
+#buds_island {width:300px;height:max-content;padding:2vw 0vw;position:absolute;background:#fff;color:#202020;font-size:1em;box-shadow:0 0 20px rgba(0,0,0,0.14);opacity:0}
+#buds_name,#buds_state,#buds_battery {width:80%;text-align:center;font-size:1.2em;font-weight:bold;float:left;margin:0 0 0 10%;}
+#buds_image {width:80%;height:auto;margin:5% 0 5% 10%;}
+#buds_state,#buds_battery {width:40%;text-align:left;font-size:0.8em}
+#buds_state {text-align:left;}
+#buds_battery {text-align:right;margin-left:0;color:green;}
+&lt;/style&gt;
+&lt;body&gt;
+
+&lt;div id="all"&gt;
+	&lt;div id="notification_island"&gt;
+		&lt;div id="noti_title"&gt;&lt;span&gt;&lt;/span&gt;&lt;/div&gt;
+		&lt;div id="noti_content"&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    
+    &lt;div id="buds_island"&gt;
+    	&lt;div id="buds_name"&gt;三星 Galaxy Buds2 Pro&lt;/div&gt;
+		&lt;div id="buds_pic"&gt;&lt;/div&gt;
+		&lt;div id="buds_state"&gt;已连接&lt;/div&gt;
+		&lt;div id="buds_battery"&gt;电量: 100%&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;script&gt;
+let fx = function(o){return document.querySelector(o)};
+let noti_land = fx("#notification_island")
+let buds_land = fx("#buds_island")
+
+if(local("island_type") == "通知"){
+buds_land.style.display = "none"
+
+fx("#noti_title").innerHTML = local("evtprm2")
+fx("#noti_content").innerText = local("evtprm3")
+
+setTimeout(function(){
+noti_land.style.left = local("island_left") - noti_land.offsetWidth / 2 + "px"
+noti_land.style.top = local("island_top") + "px"
+noti_land.style.background = local("island_bg")
+noti_land.style.color = local("island_fontcolor")
+noti_land.style["border-radius"] = noti_land.offsetHeight / 2 + "px"
+noti_land.style["transform-origin"] = local("island_origin")
+noti_land.style.opacity = 1
+noti_land.style["animation"] = "island 0.5s ease-in-out"
+},100);
+
+noti_land.onclick = function(){
+	noti_land.style["animation"] = "island_close 0.5s ease-in-out forwards"
+	setTimeout('destroyScene("灵动岛");',600);
+}
+
+if(local("island_time") &gt; 0){
+setTimeout(function(){
+	noti_land.style["animation"] = "island_close 0.5s ease-in-out forwards"
+	setTimeout('destroyScene("灵动岛");',600);
+}, local("island_time"))
+}
+
+} else if (local("island_type") == "耳机"){
+noti_land.style.display = "none"
+
+fx("#buds_name").innerText = local("bt_name")
+fx("#buds_battery").innerText = "电量 "+local("bt_battery_level") + "%"
+
+if(local("bt_battery_level") &gt;= 60){
+fx("#buds_battery").style.color = "green"
+} else if(local("bt_battery_level") &lt; 60 &amp;&amp; local("bt_battery_level") &gt;= 30){
+fx("#buds_battery").style.color = "orange"
+} else if(local("bt_battery_level") &lt; 30){
+fx("#buds_battery").style.color = "red"
+} 
+
+buds_land.style.width = local("island_size") + "px"
+
+setTimeout(function(){
+buds_land.style.left = local("island_left") - buds_land.offsetWidth / 2 + "px"
+buds_land.style.top = local("island_top") + "px"
+buds_land.style["border-radius"] = local("island_size") / 10 + "px"
+buds_land.style.background = local("island_bg")
+buds_land.style.color = local("island_fontcolor")
+
+fx("#buds_pic").innerHTML = '&lt;img id="buds_image" src="'+local("buds_pic")+'" /&gt;'
+
+buds_land.style["transform-origin"] = local("island_origin")
+buds_land.style.opacity = 1
+buds_land.style["animation"] = "island 0.5s ease-in-out"
+},100)
+
+buds_land.onclick = function(){
+	buds_land.style["animation"] = "island_close 0.5s ease-in-out forwards"
+	setTimeout('destroyScene("灵动岛");',600);
+}
+
+if(local("island_time") &gt; 0){
+setTimeout(function(){
+	buds_land.style["animation"] = "island_close 0.5s ease-in-out forwards"
+	setTimeout('destroyScene("灵动岛");',600);
+}, local("island_time"))
+}}
+
+&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;</Str>
+			<Int sr="arg3" val="1"/>
+			<Int sr="arg4" val="1"/>
+			<Int sr="arg5" val="0"/>
+			<Int sr="arg6" val="1"/>
+			<Int sr="arg7" val="1"/>
+			<RectElement sr="background">
+				<flags>4</flags>
+				<geom>-1,-1,-1,-1,-1,-1,-1,-1</geom>
+				<Str sr="arg0" ve="3"/>
+				<Int sr="arg1" val="0"/>
+				<Str sr="arg2" ve="3"/>
+				<Str sr="arg3" ve="3"/>
+				<Int sr="arg4" val="0"/>
+				<Str sr="arg5" ve="3">#FF000000</Str>
+				<Int sr="arg6" val="0"/>
+				<Int sr="arg7" val="0"/>
+			</RectElement>
+		</WebElement>
+		<PropertiesElement sr="props">
+			<Int sr="arg0" val="1"/>
+			<Int sr="arg1" val="0"/>
+			<Str sr="arg2" ve="3">#00FFFFFF</Str>
+			<Int sr="arg3" val="0"/>
+			<Str sr="arg4" ve="3">灵动岛</Str>
+			<Str sr="arg5" ve="3"/>
+			<Img sr="arg6" ve="2"/>
+			<Str sr="arg7" ve="3"/>
+		</PropertiesElement>
+	</Scene>
+</TaskerData>

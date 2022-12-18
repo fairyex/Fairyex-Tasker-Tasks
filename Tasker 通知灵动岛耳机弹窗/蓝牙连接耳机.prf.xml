@@ -1,0 +1,190 @@
+<TaskerData sr="" dvi="1" tv="6.1.5-beta">
+	<Profile sr="prof115" ve="2">
+		<cdate>1666629818625</cdate>
+		<clp>true</clp>
+		<edate>1671370333338</edate>
+		<flags>8</flags>
+		<id>115</id>
+		<mid0>109</mid0>
+		<nme>蓝牙连接耳机</nme>
+		<Event sr="con0" ve="2">
+			<code>2080</code>
+			<pri>0</pri>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES>&lt;StringArray sr=""&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;%bt_major_class
+主类
+这个设备主要蓝牙的ID&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;%bt_major_class_name
+主类名
+这个设备主要蓝牙的名称&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&gt;%bt_signal_strength
+信号强度
+连接强度 (dBm)，仅适用于已连接和已扫描的设备&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES3&gt;%bt_alias
+别名
+蓝牙设备用户名（用户名）&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES3&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES4&gt;%bt_encrypted
+加密
+如果与此设备存在至少一个加密连接，则为 true；否则为 false&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES4&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES5&gt;%bt_name
+名称
+蓝牙设备名称&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES5&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES6&gt;%bt_address
+地址
+蓝牙设备的MAC地址&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES6&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES7&gt;%bt_connected
+已连接
+如果蓝牙设备被连接则值为true，否则false&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES7&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES8&gt;%bt_battery_level
+电量等级
+剩余电量百分比，如果不可用则值为空.(Android 9+)&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES8&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES9&gt;%bt_class
+类
+此设备的蓝牙ID&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES9&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES10&gt;%bt_class_name
+类名
+该设备的蓝牙ID&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES10&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES11&gt;%bt_type
+类型
+可以是 'classic', 'le', 'dual' 或 'unknown'&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES11&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES12&gt;%bt_paired
+配对
+如果蓝牙设备已与你的手机配对则值为true，否则为false&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES12&gt;&lt;/StringArray&gt;</net.dinglisch.android.tasker.RELEVANT_VARIABLES>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>[Ljava.lang.String;</net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>
+				</Vals>
+			</Bundle>
+			<Str sr="arg1" ve="3"/>
+			<Str sr="arg2" ve="3"/>
+		</Event>
+	</Profile>
+	<Task sr="task109">
+		<cdate>1666629243255</cdate>
+		<edate>1671371754502</edate>
+		<id>109</id>
+		<nme>耳机灵动岛</nme>
+		<pri>6</pri>
+		<Action sr="act0" ve="7">
+			<code>49</code>
+			<se>false</se>
+			<Str sr="arg0" ve="3">灵动岛</Str>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>137</code>
+			<Int sr="arg0" val="0"/>
+			<Str sr="arg1" ve="3"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%bt_connected</lhs>
+					<op>3</op>
+					<rhs>true</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act10" ve="7">
+			<code>547</code>
+			<label>耳机的图片</label>
+			<Str sr="arg0" ve="3">%buds_pic</Str>
+			<Str sr="arg1" ve="3">/sdcard/Tasker/configs/earbuds.png</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+			<Int sr="arg6" val="1"/>
+		</Action>
+		<Action sr="act11" ve="7">
+			<code>47</code>
+			<Str sr="arg0" ve="3">灵动岛</Str>
+			<Int sr="arg1" val="1"/>
+			<Int sr="arg10" val="1"/>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="0"/>
+			<Int sr="arg6" val="1"/>
+			<Int sr="arg7" val="1"/>
+			<Int sr="arg8" val="1"/>
+			<Int sr="arg9" val="1"/>
+		</Action>
+		<Action sr="act2" ve="7">
+			<code>547</code>
+			<label>灵动岛距离手机屏幕左边的距离</label>
+			<Str sr="arg0" ve="3">%island_left</Str>
+			<Str sr="arg1" ve="3">50</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+			<Int sr="arg6" val="1"/>
+		</Action>
+		<Action sr="act3" ve="7">
+			<code>547</code>
+			<label>灵动岛距离手机屏幕顶部的距离</label>
+			<Str sr="arg0" ve="3">%island_top</Str>
+			<Str sr="arg1" ve="3">50</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+			<Int sr="arg6" val="1"/>
+		</Action>
+		<Action sr="act4" ve="7">
+			<code>547</code>
+			<label>灵动岛大小</label>
+			<Str sr="arg0" ve="3">%island_size</Str>
+			<Str sr="arg1" ve="3">350</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+			<Int sr="arg6" val="1"/>
+		</Action>
+		<Action sr="act5" ve="7">
+			<code>547</code>
+			<label>灵动岛类型，一般不用手动设置</label>
+			<Str sr="arg0" ve="3">%island_type</Str>
+			<Str sr="arg1" ve="3">耳机</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+			<Int sr="arg6" val="1"/>
+		</Action>
+		<Action sr="act6" ve="7">
+			<code>547</code>
+			<label>灵动岛背景颜色</label>
+			<Str sr="arg0" ve="3">%island_bg</Str>
+			<Str sr="arg1" ve="3">#fff</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+			<Int sr="arg6" val="1"/>
+		</Action>
+		<Action sr="act7" ve="7">
+			<code>547</code>
+			<label>灵动岛字体颜色</label>
+			<Str sr="arg0" ve="3">%island_fontcolor</Str>
+			<Str sr="arg1" ve="3">#202020</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+			<Int sr="arg6" val="1"/>
+		</Action>
+		<Action sr="act8" ve="7">
+			<code>547</code>
+			<label>灵动岛动画原点，top left right bottom center 组合使用，例如 top center 就是原点在顶部中间部分</label>
+			<Str sr="arg0" ve="3">%island_origin</Str>
+			<Str sr="arg1" ve="3">top center</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+			<Int sr="arg6" val="1"/>
+		</Action>
+		<Action sr="act9" ve="7">
+			<code>547</code>
+			<label>弹窗显示时间（单位：毫秒），0 是手动关闭</label>
+			<Str sr="arg0" ve="3">%island_time</Str>
+			<Str sr="arg1" ve="3">0</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+			<Int sr="arg6" val="1"/>
+		</Action>
+		<Img sr="icn" ve="2">
+			<nme>mw_hardware_headset</nme>
+			<tint>-1</tint>
+		</Img>
+	</Task>
+</TaskerData>

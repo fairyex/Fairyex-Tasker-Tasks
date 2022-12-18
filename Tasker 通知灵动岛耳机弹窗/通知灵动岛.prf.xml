@@ -1,0 +1,134 @@
+<TaskerData sr="" dvi="1" tv="6.1.5-beta">
+	<Profile sr="prof151" ve="2">
+		<cdate>1671117910799</cdate>
+		<clp>true</clp>
+		<edate>1671299262393</edate>
+		<flags>8</flags>
+		<id>151</id>
+		<mid0>149</mid0>
+		<nme>通知灵动岛</nme>
+		<Event sr="con0" ve="2">
+			<code>461</code>
+			<pri>0</pri>
+			<App sr="arg0">
+				<appClass>com.tencent.mm.ui.LauncherUI</appClass>
+				<appPkg>com.tencent.mm</appPkg>
+				<label>微信</label>
+			</App>
+			<Str sr="arg1" ve="3"/>
+			<Str sr="arg2" ve="3"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Str sr="arg5" ve="3"/>
+			<Str sr="arg6" ve="3"/>
+			<Int sr="arg7" val="0"/>
+		</Event>
+	</Profile>
+	<Task sr="task149">
+		<cdate>1666629243255</cdate>
+		<edate>1671370532204</edate>
+		<id>149</id>
+		<nme>通知灵动岛</nme>
+		<pri>100</pri>
+		<Action sr="act0" ve="7">
+			<code>49</code>
+			<se>false</se>
+			<Str sr="arg0" ve="3">灵动岛</Str>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>547</code>
+			<label>灵动岛距离手机屏幕左边的距离</label>
+			<Str sr="arg0" ve="3">%island_left</Str>
+			<Str sr="arg1" ve="3">50</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+			<Int sr="arg6" val="1"/>
+		</Action>
+		<Action sr="act2" ve="7">
+			<code>547</code>
+			<label>灵动岛距离手机屏幕顶部的距离</label>
+			<Str sr="arg0" ve="3">%island_top</Str>
+			<Str sr="arg1" ve="3">50</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+			<Int sr="arg6" val="1"/>
+		</Action>
+		<Action sr="act3" ve="7">
+			<code>547</code>
+			<label>灵动岛类型，一般不用手动设置</label>
+			<Str sr="arg0" ve="3">%island_type</Str>
+			<Str sr="arg1" ve="3">通知</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+			<Int sr="arg6" val="1"/>
+		</Action>
+		<Action sr="act4" ve="7">
+			<code>547</code>
+			<label>灵动岛背景颜色</label>
+			<Str sr="arg0" ve="3">%island_bg</Str>
+			<Str sr="arg1" ve="3">#000000</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+			<Int sr="arg6" val="1"/>
+		</Action>
+		<Action sr="act5" ve="7">
+			<code>547</code>
+			<label>灵动岛字体颜色</label>
+			<Str sr="arg0" ve="3">%island_fontcolor</Str>
+			<Str sr="arg1" ve="3">#fff</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+			<Int sr="arg6" val="1"/>
+		</Action>
+		<Action sr="act6" ve="7">
+			<code>547</code>
+			<label>灵动岛动画原点，top left right bottom center 组合使用，例如 top center 就是原点在顶部中间部分</label>
+			<Str sr="arg0" ve="3">%island_origin</Str>
+			<Str sr="arg1" ve="3">top center</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+			<Int sr="arg6" val="1"/>
+		</Action>
+		<Action sr="act7" ve="7">
+			<code>547</code>
+			<label>通知显示时间（单位：毫秒），0 是手动关闭</label>
+			<Str sr="arg0" ve="3">%island_time</Str>
+			<Str sr="arg1" ve="3">3000</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+			<Int sr="arg6" val="1"/>
+		</Action>
+		<Action sr="act8" ve="7">
+			<code>47</code>
+			<Str sr="arg0" ve="3">灵动岛</Str>
+			<Int sr="arg1" val="0"/>
+			<Int sr="arg10" val="1"/>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="0"/>
+			<Int sr="arg6" val="1"/>
+			<Int sr="arg7" val="1"/>
+			<Int sr="arg8" val="1"/>
+			<Int sr="arg9" val="1"/>
+		</Action>
+		<Img sr="icn" ve="2">
+			<nme>mw_communication_message</nme>
+			<tint>-16777216</tint>
+		</Img>
+	</Task>
+</TaskerData>
