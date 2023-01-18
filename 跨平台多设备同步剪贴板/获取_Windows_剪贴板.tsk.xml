@@ -1,0 +1,38 @@
+<TaskerData sr="" dvi="1" tv="6.1.7-beta">
+	<Task sr="task121">
+		<cdate>1667635169567</cdate>
+		<edate>1673317332056</edate>
+		<id>121</id>
+		<nme>获取 Windows 剪贴板</nme>
+		<pri>100</pri>
+		<Share sr="Share">
+			<b>false</b>
+			<d>获取远程设备的剪贴板数据
+
+相关使用方法和文章可以参考 Fairyex 在少数派的文章</d>
+			<g>Clipboard,Utility</g>
+			<p>true</p>
+			<t></t>
+		</Share>
+		<Action sr="act0" ve="7">
+			<code>130</code>
+			<Str sr="arg0" ve="3">同步 Windows 剪贴板</Str>
+			<Int sr="arg1">
+				<var>%priority</var>
+			</Int>
+			<Int sr="arg10" val="1"/>
+			<Str sr="arg2" ve="3">获取</Str>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Int sr="arg5" val="0"/>
+			<Int sr="arg6" val="0"/>
+			<Str sr="arg7" ve="3"/>
+			<Int sr="arg8" val="0"/>
+			<Int sr="arg9" val="0"/>
+		</Action>
+		<Img sr="icn" ve="2">
+			<nme>mw_action_assignment</nme>
+			<tint>-16777216</tint>
+		</Img>
+	</Task>
+</TaskerData>

@@ -1,0 +1,151 @@
+<TaskerData sr="" dvi="1" tv="6.1.7-beta">
+	<Profile sr="prof122" ve="2">
+		<cdate>1667631562200</cdate>
+		<clp>true</clp>
+		<edate>1674022279822</edate>
+		<flags>8</flags>
+		<id>122</id>
+		<mid0>124</mid0>
+		<nme>分享文件数据到 Windows 剪贴板</nme>
+		<Share sr="Share">
+			<b>false</b>
+			<d>分享非文本数据到远程设备剪贴板
+
+相关使用方法和文章可以参考 Fairyex 在少数派的文章</d>
+			<g>Clipboard,Utility</g>
+			<p>true</p>
+			<t></t>
+		</Share>
+		<Event sr="con0" ve="2">
+			<code>580953799</code>
+			<pri>0</pri>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<com.twofortyfouram.locale.intent.extra.BLURB>Command: 发送到电脑
+Sender: all
+Subject: all
+Text: all
+File: all</com.twofortyfouram.locale.intent.extra.BLURB>
+					<com.twofortyfouram.locale.intent.extra.BLURB-type>java.lang.String</com.twofortyfouram.locale.intent.extra.BLURB-type>
+					<configcaseinsensitiveimage>false</configcaseinsensitiveimage>
+					<configcaseinsensitiveimage-type>java.lang.Boolean</configcaseinsensitiveimage-type>
+					<configcaseinsensitivesub>false</configcaseinsensitivesub>
+					<configcaseinsensitivesub-type>java.lang.Boolean</configcaseinsensitivesub-type>
+					<configcaseinsensitivetext>false</configcaseinsensitivetext>
+					<configcaseinsensitivetext-type>java.lang.Boolean</configcaseinsensitivetext-type>
+					<configcommand>发送到电脑</configcommand>
+					<configcommand-type>java.lang.String</configcommand-type>
+					<configexactimage>false</configexactimage>
+					<configexactimage-type>java.lang.Boolean</configexactimage-type>
+					<configexactsub>false</configexactsub>
+					<configexactsub-type>java.lang.Boolean</configexactsub-type>
+					<configexacttext>false</configexacttext>
+					<configexacttext-type>java.lang.Boolean</configexacttext-type>
+					<configimage>&lt;null&gt;</configimage>
+					<configimage-type>java.lang.String</configimage-type>
+					<configregeximage>false</configregeximage>
+					<configregeximage-type>java.lang.Boolean</configregeximage-type>
+					<configregexsub>false</configregexsub>
+					<configregexsub-type>java.lang.Boolean</configregexsub-type>
+					<configregextext>false</configregextext>
+					<configregextext-type>java.lang.Boolean</configregextext-type>
+					<configsubject>&lt;null&gt;</configsubject>
+					<configsubject-type>java.lang.String</configsubject-type>
+					<configtext>&lt;null&gt;</configtext>
+					<configtext-type>java.lang.String</configtext-type>
+					<net.dinglisch.android.tasker.EXTRA_NSR_DEPRECATED>true</net.dinglisch.android.tasker.EXTRA_NSR_DEPRECATED>
+					<net.dinglisch.android.tasker.EXTRA_NSR_DEPRECATED-type>java.lang.Boolean</net.dinglisch.android.tasker.EXTRA_NSR_DEPRECATED-type>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES>&lt;StringArray sr=""&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;%ascommand
+Selected Command
+&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;%asfile()
+Shared Files
+&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&gt;%assubject
+Shared Subject
+&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES3&gt;%astext
+Shared Text
+&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES3&gt;&lt;/StringArray&gt;</net.dinglisch.android.tasker.RELEVANT_VARIABLES>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>[Ljava.lang.String;</net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>
+					<net.dinglisch.android.tasker.extras.REQUESTED_TIMEOUT>0</net.dinglisch.android.tasker.extras.REQUESTED_TIMEOUT>
+					<net.dinglisch.android.tasker.extras.REQUESTED_TIMEOUT-type>java.lang.Integer</net.dinglisch.android.tasker.extras.REQUESTED_TIMEOUT-type>
+					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>configcommand plugininstanceid plugintypeid </net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>
+					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>java.lang.String</net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>
+					<net.dinglisch.android.tasker.subbundled>true</net.dinglisch.android.tasker.subbundled>
+					<net.dinglisch.android.tasker.subbundled-type>java.lang.Boolean</net.dinglisch.android.tasker.subbundled-type>
+					<plugininstanceid>672aa90a-8df7-4a75-82d1-b59e97dbb5bc</plugininstanceid>
+					<plugininstanceid-type>java.lang.String</plugininstanceid-type>
+					<plugintypeid>com.joaomgcd.autoshare.intent.IntentReceiveShareEvent</plugintypeid>
+					<plugintypeid-type>java.lang.String</plugintypeid-type>
+				</Vals>
+			</Bundle>
+			<Str sr="arg1" ve="3">com.joaomgcd.autoshare</Str>
+			<Str sr="arg2" ve="3">com.joaomgcd.autoshare.activity.ActivityConfigReceiveShareEvent</Str>
+			<Int sr="arg3" val="1"/>
+		</Event>
+	</Profile>
+	<Task sr="task124">
+		<cdate>1667631801125</cdate>
+		<edate>1674022266357</edate>
+		<id>124</id>
+		<pri>6</pri>
+		<Action sr="act0" ve="7">
+			<code>105</code>
+			<se>false</se>
+			<Str sr="arg0" ve="3">%astext</Str>
+			<Int sr="arg1" val="0"/>
+			<Str sr="arg2" ve="3"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%astext</lhs>
+					<op>12</op>
+					<rhs></rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>130</code>
+			<Str sr="arg0" ve="3">同步 Windows 剪贴板</Str>
+			<Int sr="arg1">
+				<var>%priority</var>
+			</Int>
+			<Int sr="arg10" val="1"/>
+			<Str sr="arg2" ve="3">发送</Str>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Int sr="arg5" val="1"/>
+			<Int sr="arg6" val="0"/>
+			<Str sr="arg7" ve="3"/>
+			<Int sr="arg8" val="0"/>
+			<Int sr="arg9" val="0"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%astext</lhs>
+					<op>12</op>
+					<rhs></rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act2" ve="7">
+			<code>130</code>
+			<Str sr="arg0" ve="3">同步 Windows 剪贴板</Str>
+			<Int sr="arg1">
+				<var>%priority</var>
+			</Int>
+			<Int sr="arg10" val="1"/>
+			<Str sr="arg2" ve="3">发送</Str>
+			<Str sr="arg3" ve="3">%asfile(1)</Str>
+			<Str sr="arg4" ve="3"/>
+			<Int sr="arg5" val="1"/>
+			<Int sr="arg6" val="0"/>
+			<Str sr="arg7" ve="3"/>
+			<Int sr="arg8" val="0"/>
+			<Int sr="arg9" val="0"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%asfile(1)</lhs>
+					<op>12</op>
+					<rhs></rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+	</Task>
+</TaskerData>

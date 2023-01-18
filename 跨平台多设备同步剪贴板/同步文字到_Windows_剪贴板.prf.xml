@@ -1,0 +1,65 @@
+<TaskerData sr="" dvi="1" tv="6.1.7-beta">
+	<Profile sr="prof125" ve="2">
+		<cdate>1667635603113</cdate>
+		<clp>true</clp>
+		<edate>1674020917879</edate>
+		<flags>8</flags>
+		<id>125</id>
+		<mid0>126</mid0>
+		<nme>同步文字到 Windows 剪贴板</nme>
+		<Share sr="Share">
+			<b>false</b>
+			<d>在剪贴板改变时同步文本剪贴板数据到远程设备 
+
+相关使用方法和文章可以参考 Fairyex 在少数派的文章</d>
+			<g>Clipboard,Utility</g>
+			<p>true</p>
+			<t></t>
+		</Share>
+		<Event sr="con0" ve="2">
+			<code>2097</code>
+			<pri>0</pri>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES>&lt;StringArray sr=""&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;%cl_html_text
+HTML 文本
+当前剪贴板文本（若设置为 HTML 文本）&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;%cl_mimetypes()
+Mime 类型
+剪贴板包含的数据类型&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&gt;%cl_uri
+URI
+当前剪贴板 URI（可以是图片或其他内容）&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES3&gt;%cl_extras
+其他
+剪贴板可能包含的 JSON 格式中的可选额外信息&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES3&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES4&gt;%cl_image_uri
+图片 URI
+如果 URI 对应于一张图片，这将具有一个值&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES4&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES5&gt;%cl_text
+文字
+当前剪贴板文本&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES5&gt;&lt;/StringArray&gt;</net.dinglisch.android.tasker.RELEVANT_VARIABLES>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>[Ljava.lang.String;</net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>
+				</Vals>
+			</Bundle>
+			<Int sr="arg1" val="0"/>
+		</Event>
+	</Profile>
+	<Task sr="task126">
+		<cdate>1667635606599</cdate>
+		<edate>1674020907520</edate>
+		<id>126</id>
+		<pri>6</pri>
+		<Action sr="act0" ve="7">
+			<code>130</code>
+			<Str sr="arg0" ve="3">同步 Windows 剪贴板</Str>
+			<Int sr="arg1">
+				<var>%priority</var>
+			</Int>
+			<Int sr="arg10" val="1"/>
+			<Str sr="arg2" ve="3">发送</Str>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Int sr="arg5" val="0"/>
+			<Int sr="arg6" val="0"/>
+			<Str sr="arg7" ve="3"/>
+			<Int sr="arg8" val="0"/>
+			<Int sr="arg9" val="0"/>
+		</Action>
+	</Task>
+</TaskerData>
